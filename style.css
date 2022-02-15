@@ -1,0 +1,680 @@
+
+/*Inicio CSS index.html */
+
+.body {
+    background-color: rgb(236, 204, 204);
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+
+grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 10px;
+
+grid-template-areas: 'header header header'
+'productos productos aside'
+'footer footer footer';
+}
+
+.logo {
+    width: 180px; 
+}
+
+
+:visited
+
+.parrafoUno {
+    margin-top: 100px;
+}
+
+.navHeader {
+   display: flex;
+   justify-content: space-around; 
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    font-size: 20px;
+    color: hsl(0, 4%, 5%);
+    background-color: rgb(255, 255, 255);
+    flex-wrap: wrap;
+    font-family: 'Abril Fatface', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Poppins', sans-serif;
+}
+
+
+.parrafoUno {
+    color: black;
+    font-size: 23px;
+    font-style: italic;
+}
+
+.header {
+    grid-area: header;
+}
+
+.seccionProductos {
+    grid-area: productos;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
+
+.gridItem {
+    display: flex;
+    justify-content: center;
+}
+
+.pasteleriArt {
+    font-family: 'Abril Fatface', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Poppins', sans-serif;
+    
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding-bottom: 30px;
+}
+
+.gridItem {
+    padding-bottom: 100px;
+}
+
+.subtitulo {
+    font-family: 'Abril Fatface', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+
+}
+
+.aside {
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+
+.asideDos {
+    padding-top: 180px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.seccionProductos1 {
+    width: 350px;
+}
+
+.seccionProductos2 {
+    width: 260px;
+padding-left: 80px;
+}
+
+.sticky {
+    padding-bottom: 250px;
+    position: sticky; 
+    top: 0; 
+}
+
+.footerFooter { 
+    display: flex;
+    justify-content: space-between
+}
+
+.selvaNegraInterna {
+    width: 400px;
+}
+
+.seccionVideo {
+ padding-left: 60px;
+ padding-top: 30px;
+
+}
+
+.parrafosCheese1 {
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 100px;
+    border: 60px;
+    font-size: 20px;
+    display: flex;
+    margin: 100px;
+    border: 100px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logoSms {
+    display: flex;
+    justify-content: center;
+}
+
+.TodosLosPedidos {
+    background-color: wheat;
+    border: solid; color: black;
+}
+
+.SiTuPedido { 
+    background-color: wheat;
+    border: solid; color: black;
+}
+
+.todosLosEnvios {
+    background-color: wheat;
+    border: solid; color: black;
+}
+
+.LosPagos { background-color: wheat;
+    border: solid; color: black;
+}
+
+.footer22 {
+    display: flex;
+    justify-content: start;
+    padding-top: 250px;
+}
+
+
+.tel {
+    font-family: fantasy;
+}
+
+.parrafosCheese2 {
+    font-family:  'Abril Fatface', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Poppins', sans-serif;;
+    padding-top: 50px;
+    border: 60px;
+    font-size: 20px;
+    display: flex; 
+    margin: 100px;
+    border: 100px;
+    justify-content: space-between;
+}
+
+.footerFinal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoIg {
+    padding-top: 200px;
+    padding-left: 35px;
+}
+
+.logoIG {
+    width: 50px;
+}
+
+.tel {
+    font-family: 'Times New Roman', Times, serif;
+
+    text-decoration: underline;
+}
+
+.logo:hover {
+transform: scale(2);
+}
+
+/*Fin CSS index.html */
+/*---------------------*/
+
+
+/*Inicio Media Query mobile 1 
+style index.html 0px a 94px*/
+
+@media screen and (max-width: 94px) {
+    .gridContainer .gridContainer {
+        display: grid;
+        grid-template-rows: auto auto;
+     grid-template-columns: 500px 500px;
+
+    grid-gap: 10px;
+    
+    grid-template-areas: 'header header'
+    'productos aside'
+    'footer footer';
+    }
+
+    .header {
+        grid-area: header;
+    }
+    
+    .seccionProductos {
+        grid-area: productos;
+    }
+    
+    .aside {
+        grid-area: aside;
+    }
+    
+    .footer {
+        grid-area: footer;
+    }
+}
+
+
+/*Inicio Media Query mobile 2 
+style index.html 0px a 480px*/
+
+
+@media screen and (max-width: 480px) {
+        .gridContainer {
+            display: grid;
+            grid-template-rows: auto;
+         grid-template-columns: 1fr;
+         grid-gap: 10px;
+        
+        grid-template-areas: 'header header'
+        'productos aside'
+        'footer';
+        }
+    }
+
+    .body { background-color: rgb(250, 225, 225);
+    }
+
+    .sticky{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        position: relative;
+        justify-content: space-between;
+    }
+    
+    .navHeader {
+        background-color: rgb(250, 225, 225);
+        border-left: solid black;
+    }
+    
+    .logo {
+        width: 250px;
+    }
+
+    .tel {
+        display: flex;
+        font-size: larger;
+    }
+
+    .LosPagos {
+        margin: 100px;
+    }
+
+    .SiTuPedido { margin: 100px;
+    }    
+    
+   
+
+
+
+/*Fin Media Query mobile 
+style index.html 0px a 94px y 480px*/
+
+  /*Inicio Media Query tablet 
+style index.html 481px a 700px*/
+
+@media screen and (min-width: 481px) and (max-width: 700px)
+     {
+    .gridContainer {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'header'
+        'productos aside'
+        'footer';
+        } 
+
+        .inicio{
+            margin: 3px;
+        }
+
+        .tortas{
+            margin: 3px;
+        }
+    
+        .desayunos {
+            margin: 3px;
+        }
+        .conocenos {
+            margin: 3px;
+        }
+
+        .crearCta {
+            margin: 3px;
+        }
+
+        .header {
+            grid-area: header;
+        }
+        
+        .seccionProductos {
+            grid-area: productos;
+        }
+        
+        .aside {
+            grid-area: aside;
+        }
+        
+        .footer {
+            grid-area: footer;
+        } 
+    } 
+
+/*Fin Media Query tablet 
+style index.html 481px a 700px*/
+
+
+@media screen and (min-width: 701px) and (max-width: 994px)
+     {
+     .body {
+         background-color: rgb(160, 193, 224);
+     }
+     
+
+     .navHeader {
+         display: flex;
+         justify-content: space-around;
+         background-color: rgb(160, 193, 224);
+         color: azure;
+     }
+     
+
+     .LosPagos {
+         margin: 100px;
+     }
+
+     .pasteleriArt {
+         color: antiquewhite;
+     }
+
+     .subtitulo {
+         color: antiquewhite;
+     }
+
+     .parrafoUno {
+         color: aliceblue;
+     }
+
+     .aside {
+         color: aliceblue;
+     }
+     
+     .tel {
+         color: rgb(245, 235, 235) 
+        }
+
+
+  /*Fin Media Query tablet 
+style index.html 481px a 994px*/
+ /*--------------------------*/
+
+
+ 
+/*Inicio Media Query desktop 
+style index.html +995px*/
+
+    @media screen and (min-width: 994px) and (max-widht: 1250px) { 
+        .gridContainer {
+            display: grid;
+            grid-template-rows: auto auto auto auto;
+        
+            grid-template-columns: 1fr 1fr 1fr;
+
+            grid-template-areas: 'header header header'
+            'productos productos aside'
+            'footer footer footer';   
+        }
+
+        .SiTuPedido {
+            margin-top: 100px;
+        }
+
+        .navHeader{
+            display: flex;
+            margin: 10px;
+        }
+
+        .inicio{
+            margin: 3px;
+        }
+
+        .tortas{
+            margin: 3px;
+        }
+    
+        .desayunos {
+            margin: 3px;
+        }
+        .conocenos {
+            margin: 3px;
+        }
+
+        .crearCta {
+            margin: 3px;
+        }
+        
+
+        .body {
+            background-color: rgb(0, 0, 0);
+        }
+
+        
+    }
+
+    @media screen and (min-width: 1250px) {
+        .gridContainer {
+            display: grid;
+            grid-template-rows: auto auto;
+        
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        
+        grid-template-areas: 'header header'
+        'productos' 'aside'
+        'footer footer';
+        }
+
+
+        .inicio{
+            margin: 3px;
+        }
+
+        .tortas{
+            margin: 3px;
+        }
+    
+        .desayunos {
+            margin: 3px;
+        }
+        .conocenos {
+            margin: 3px;
+        }
+
+        .crearCta {
+            margin: 3px;
+        }
+
+        .header {
+            grid-area: header;
+        }
+        
+        .seccionProductos {
+            grid-area: productos;
+        }
+        
+        .aside {
+            grid-area: aside;
+        }
+        
+        .footer {
+            grid-area: footer;
+        }
+
+    }
+/*Fin Media Query desktop 
+style index.html +995 +1250px*/
+
+/*Fin CSS + Media Query index.html/*
+/*--------------------------------*/
+
+
+
+
+
+/*Inicio CSS crearcuenta.html*/
+
+.headerTituloCrearCta {
+
+   padding-left: 200px;
+}
+
+.h1CrearCta {
+    padding-left: 500px;
+}
+
+.mainCrearCta {
+    margin: 10px;
+    font-size: large;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-left: 300px;
+}
+
+.marginCrearCta {
+    margin: 20px;
+}
+
+.meryLogoCrearCta {
+    width: 100px;
+    display: flex;
+    }
+
+    .h1CrearCta {
+        font-size: 60px;
+         font-family: 'Abril Fatface', cursive;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Pacifico', cursive;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .footerCrearCta {
+        padding-top: 200px;
+        padding-left: 650px;
+    }
+
+   .h2CrearCta {
+        text-decoration: underline;
+        font-family: 'Abril Fatface', cursive;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Pacifico', cursive;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-style: italic;
+        display: flex;
+        justify-content: end;
+    }
+
+
+
+    .inicioCrearCta {
+        font-size: 20px;
+        text-decoration: underline;
+        font-family: 'Abril Fatface', cursive;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Pacifico', cursive;
+        font-family: 'Poppins', sans-serif;
+    }
+
+}
+
+        
+    /*  Fin CSS crearcuenta.html*/
+    /*-------------------------------*/
+
+
+    /*  Inicio Media Query mobile 
+    style crearcuenta.html 0px a 480px  */
+
+    @media screen and (max-width: 480px) {
+        .h1CrearCta {
+            font-size: 30px;
+            display: flex;
+            padding-left: 250px;
+        }
+
+       
+
+        .mainCrearCta {
+            font-size: 25px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+
+        .bodyCrearCta {
+            background-color: rgb(255, 189, 189);
+        }   
+    }
+
+    /*Fin Media Query mobile 
+    style crearcuenta.html 0px a 480px*/
+    /*-----------------------------------*/
+
+    /*  Inicio Media Query tablet 
+    style crearcuenta.html 481px a 994px  */
+
+    @media screen and (min-width: 481px) and
+     (max-width: 994px) {
+         .h1CrearCta {
+             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+             font-size: 30px;
+             font-style: oblique;
+             padding-left: 300px;
+         }
+         .bodyCrearCta {
+             background-color: rgb(253, 227, 227);
+         }
+
+        .iframeCrearCta {
+          padding-top: 1000px;  
+         }
+         
+         .h2CrearCta{
+             padding-left: 200px;
+         }
+
+        }
+    
+        /*Fin Media Query tablet 
+        style crearcuenta.html 481px a 994px*/
+        /*--------------------------*/
+
+        /*  Inicio Media Query desktop 
+        style crearcuenta.html +995px 
+        *Sin modificaciones* */
+
+
+        /* Fin CSS + Media Query index.html   */
+        /*--------------------------------*/
